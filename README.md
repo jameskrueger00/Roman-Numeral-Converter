@@ -16,7 +16,7 @@ Usage: `convert [-dtr/-rtd] <value>`
 
 - I spent all 4 hours on the challenge. 
 
-- I prioritized a working solution over optimizing my conversion code. 
+- I prioritized a working solution over fully optimizing my conversion algorithm. 
 
 - If I had more time, I believe I could work out an algorithm that would determine the proper roman numeral symbol without hard coding each place value in RomanNumeral::toRoman(). The challenge document mentioned a certain (10x+1) relationship that I considered for a bit before I decided to move forward with my approach.
 
