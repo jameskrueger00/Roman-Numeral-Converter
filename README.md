@@ -5,7 +5,7 @@ Usage: `convert [-dtr/-rtd] <value>`
 ---
 - -dtr: decimal to roman
 - -rtd: roman to decimal
-- <value>: valid roman numeral (ALL CAPS)/integer (0 < value < 4000)`
+- <value>: valid roman numeral (ALL CAPS)/integer (0 < value < 4000)
 
 - The program will display this usage info if (the wrong number of arguments are specified) OR (either the flag or the input is invalid)
 
