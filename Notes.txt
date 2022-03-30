@@ -1,0 +1,39 @@
+#Notes:
+
+- I wanted to run the program from the command line.
+- The first system I implemented was getting the flags and input
+
+- Then I tackled validating input.
+- What is a valid decimal value in this case?
+    A positive integer 0 < x < 4000.
+- What is a valid roman numeral?
+    x < MMMCMXCIX
+- I also picked up on some of the patterns that define a valid roman numeral:
+
+# Roman numeral patterns:
+
+- C,X, and I are the only subtracted values
+- Each symbol will have one of the three subtract symbols associated with it 
+    (whichever is less than && closest)
+- No symbol is repeated more than 3 times
+- Any subtracted symbol will be isolated (not in a repeating sequence)
+- If there is no subtraction, then each symbol will procede a lesser or equal
+    value aymbol. 
+
+- I created a roman numeral class to house relevant functions. 
+- Each symbol was assigned an integer value as a macro expression.
+    A charToInt() function mapped these symbols to the macros.
+- This helped me use the relational operators to validate the symbol order.
+
+- Once the numeral was deemed valid, the RomanNumeral::toDecimal() operation 
+    would be some simple arithmetic. 
+
+- I remember learning regex as a method of validating input in CS 236;
+    however we learned regex on paper, and I have not implemented regex in
+    c++. If I had more time I would look into using the library. I was more 
+    comfortable cranking out some quick switch statements. 
+
+- For the RomanNumeral::toRoman() function, I recognized that there was going
+  to be a specific set of roman numerals corresponding to each of the decimal 
+  base 10 place values. I was basically out of time, so I hard coded these 
+  combinations into some switch statements
